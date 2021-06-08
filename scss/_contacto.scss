@@ -1,0 +1,51 @@
+.contact{
+    overflow: hidden;
+    padding: 42px;
+    background-color: #5D9EA6;
+    align-items: center;
+}
+.contact h2{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -1.5px;
+}
+form input, form textarea{
+    display: block;
+    width: 100%;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+form input:focus,form textarea:focus{
+    
+    border-color:  black;
+  
+}
+.contact input{
+    width: 50%;
+    border: none;
+    background-color: white;
+    color: white;
+    outline: none;
+    font-size: 23px;
+    letter-spacing: -0.5px;
+    padding: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background-color: #b4ffff;
+    width: 10%;
+}
+
+textarea {
+    width: 600px; height: 100px;
+    transition: all 2s;       
+ }
+
+ textarea:hover {
+    width: 800px;
+    font-size: 20px;
+}

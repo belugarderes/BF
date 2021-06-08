@@ -1,0 +1,583 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.Azul {
+  color: #b4ffff;
+}
+
+.navbar {
+  background-color: black;
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #b4ffff;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.nav-item {
+  font-size: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10px;
+  padding: 10px;
+}
+
+.navbar-toggler {
+  background-color: #16f5f5;
+  border: none;
+  padding: 10px 10px;
+  width: 5%;
+}
+
+.menu {
+  color: #b4ffff;
+}
+
+a {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+a:hover {
+  color: #b4ffff;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.home {
+  background-image: url(/img/BlueWomen.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+.home-content h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: gray;
+  letter-spacing: -0.5px;
+}
+
+.home-content h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 43px;
+  /* width: 96%; */
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+.home-content .home-btn.btnr {
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
+  margin-bottom: 10px;
+  -webkit-transition: color 0.9s ease;
+  transition: color 0.9s ease;
+}
+
+.btnr:hover {
+  color: #b4ffff;
+}
+
+.btnl {
+  border: 2px solid #b4ffff;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+  background-color: transparent;
+  color: #16f5f5;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.btnl:hover {
+  background-color: white;
+  border: 2px solid white;
+  color: #206161;
+}
+
+.home-Carousel {
+  background-color: black;
+  padding: 40px 5px 58px 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addtion-l {
+  padding-right: 50px;
+  margin-left: auto;
+}
+
+.addtion-l h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.addtion-l span {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.addtion-l h4 {
+  margin-bottom: 20px;
+  color: #a09696;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 37.9px;
+}
+
+.addtion-l h5 {
+  margin-bottom: 20px;
+  color: #a09696;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 37.9px;
+}
+
+@media only screen and (max-width: 425px) {
+  .home {
+    width: 100vw;
+    background-position: center center;
+  }
+  .carousel {
+    display: none;
+  }
+  .home-Carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .addtion-l {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-cardl {
+    margin-top: 25px;
+  }
+  .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    min-height: 50vh;
+    background-position: center center;
+    width: 100vw;
+  }
+  .carousel {
+    display: none;
+  }
+  .home-Carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .addtion-l {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-cardl {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .home {
+    background-position: center center;
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .home {
+    background-position: center center;
+    width: 100vw;
+    height: 115vh;
+  }
+}
+
+.about {
+  padding: 42px;
+  background-color: #5D9EA6;
+}
+
+.about-cont h2 {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-cont p {
+  margin-bottom: 25px;
+  color: black;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.about-cont span {
+  margin-bottom: 25px;
+  color: black;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.about-cardl {
+  margin-bottom: 20px;
+}
+
+.about-cardl .card-body span {
+  font-size: 24px;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-cardl .card-body .fir {
+  display: inline-block;
+  margin-left: 57%;
+  font-size: 22px;
+  color: white;
+}
+
+.about-cardl .card-body .sec {
+  display: inline-block;
+  margin-left: 36%;
+  font-size: 22px;
+  color: gray;
+}
+
+.card-b {
+  padding: 0 21px;
+}
+
+.card-b h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: -3px;
+  color: white;
+}
+
+.card-b h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+}
+
+.card-so {
+  text-align: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.card-so i {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 2px;
+  font-size: 19px;
+  color: gray;
+  margin-left: 45px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.card-body1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background-color: black;
+}
+
+.class {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+}
+
+.class .container h2 {
+  font-size: 37px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.card2 {
+  margin-bottom: 10px;
+  background-color: #5D9EA6;
+}
+
+.card-content {
+  position: relative;
+  text-align: left;
+}
+
+.class-m .card-content h2 {
+  font-weight: 700;
+}
+
+.class-m .card-content h3 {
+  font-size: 18px;
+  color: black;
+}
+
+.class-m p {
+  text-align: left;
+  margin-top: 25px;
+  color: black;
+  padding: 0 4px;
+  font-size: 17px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+th, td, .table thead th, .table td, .table th {
+  border: 1px solid white;
+}
+
+.schedule {
+  text-align: center;
+  background-color: #5D9EA6;
+  padding: 80px 20px;
+}
+
+.schedule h2 {
+  color: gray;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.schedule h3 {
+  color: white;
+  font-size: 44px;
+  letter-spacing: -2.5px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.table-bordered {
+  border: 1px solid white;
+}
+
+.table thead th {
+  color: white;
+  background-color: black;
+  width: 110px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+td.b {
+  color: white;
+  background-color: black;
+  width: 110px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+td strong {
+  color: white;
+}
+
+td span {
+  color: white;
+}
+
+.price {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+}
+
+.price .container h2 {
+  font-size: 37px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.formatoTexto {
+  color: white;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.price li {
+  padding: 8px;
+}
+
+.price button {
+  background-color: #5D9EA6;
+  color: white;
+}
+
+.price button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: black;
+}
+
+.contact {
+  overflow: hidden;
+  padding: 42px;
+  background-color: #5D9EA6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+  margin-bottom: 30px;
+  padding: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: black;
+}
+
+.contact input {
+  width: 50%;
+  border: none;
+  background-color: white;
+  color: white;
+  outline: none;
+  font-size: 23px;
+  letter-spacing: -0.5px;
+  padding: 10px 0;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #b4ffff;
+  width: 10%;
+}
+
+textarea {
+  width: 600px;
+  height: 100px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+textarea:hover {
+  width: 800px;
+  font-size: 20px;
+}
+
+.footer {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.footer .footer-copyright {
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
