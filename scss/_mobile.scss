@@ -1,0 +1,131 @@
+@media only screen and (max-width: 450px) {
+    .home {
+        width: 100vw;
+        background-position: center center;
+    }
+    .carousel {
+        display: none;
+    }
+
+    .home-Carousel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .addtion-l {
+        justify-content: center;
+    }
+
+    .about-cardl {
+        margin-top: 25px;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-form {
+        margin-top: 10%;
+    }
+
+    .register-form {
+        margin-top: 10%;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .register {
+        display: flex;
+
+        .main {
+            width: 100vw;
+        }
+
+        .login-form {
+            margin-left: 20%;
+            margin-right: 10%;
+            align-content: center;
+        }
+        .form-group {
+            width: 50vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        min-height: 50vh;
+        background-position: center center;
+        width: 100vw;
+    }
+    .carousel {
+        display: none;
+    }
+
+    .home-Carousel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .addtion-l {
+        justify-content: center;
+    }
+
+    .about-cardl {
+        margin-top: 25px;
+    }
+
+    .login-form {
+        margin-top: 60%;
+    }
+
+    .register-form {
+        margin-top: 20%;
+    }
+
+    .login-main-text {
+        p {
+            display: none;
+        }
+    }
+
+    .register {
+        .login-form {
+            margin-top: 25vh;
+            align-content: center;
+        }
+        .form-group {
+            width: 40vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .home {
+        background-position: center center;
+        width: 100vw;
+    }
+
+    #intro {
+        margin-top: -58.59px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .home {
+        background-position: center center;
+        width: 100vw;
+        height: 115vh;
+    }
+
+    .register {
+        .login-form {
+            margin-top: 50%;
+            margin-left: 40%;
+            align-content: center;
+        }
+    }
+}

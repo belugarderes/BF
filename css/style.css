@@ -71,7 +71,7 @@ button:hover {
 }
 
 .home {
-  background-image: url(/img/BlueWomen.jpg);
+  background-image: url(./img/bluewomen.jpeg);
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -90,18 +90,10 @@ button:hover {
   z-index: 2;
 }
 
-.home-content h3 {
-  font-size: 24px;
-  margin-bottom: 30px;
-  color: gray;
-  letter-spacing: -0.5px;
-}
-
 .home-content h2 {
   color: white;
   margin-bottom: 30px;
   font-size: 43px;
-  /* width: 96%; */
   letter-spacing: -0.5px;
   font-weight: 700;
 }
@@ -196,88 +188,9 @@ button:hover {
   line-height: 37.9px;
 }
 
-@media only screen and (max-width: 425px) {
-  .home {
-    width: 100vw;
-    background-position: center center;
-  }
-  .carousel {
-    display: none;
-  }
-  .home-Carousel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .addtion-l {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .about-cardl {
-    margin-top: 25px;
-  }
-  .table {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .home {
-    min-height: 50vh;
-    background-position: center center;
-    width: 100vw;
-  }
-  .carousel {
-    display: none;
-  }
-  .home-Carousel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .addtion-l {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .about-cardl {
-    margin-top: 25px;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .home {
-    background-position: center center;
-    width: 100vw;
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  .home {
-    background-position: center center;
-    width: 100vw;
-    height: 115vh;
-  }
-}
-
 .about {
   padding: 42px;
-  background-color: #5D9EA6;
+  background-color: #5d9ea6;
 }
 
 .about-cont h2 {
@@ -386,7 +299,7 @@ button:hover {
 
 .card2 {
   margin-bottom: 10px;
-  background-color: #5D9EA6;
+  background-color: #5d9ea6;
 }
 
 .card-content {
@@ -415,13 +328,17 @@ button:hover {
   border-collapse: collapse;
 }
 
-th, td, .table thead th, .table td, .table th {
+th,
+td,
+.table thead th,
+.table td,
+.table th {
   border: 1px solid white;
 }
 
 .schedule {
   text-align: center;
-  background-color: #5D9EA6;
+  background-color: #5d9ea6;
   padding: 80px 20px;
 }
 
@@ -497,7 +414,7 @@ td span {
 }
 
 .price button {
-  background-color: #5D9EA6;
+  background-color: #5d9ea6;
   color: white;
 }
 
@@ -510,7 +427,7 @@ td span {
 .contact {
   overflow: hidden;
   padding: 42px;
-  background-color: #5D9EA6;
+  background-color: #5d9ea6;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -523,49 +440,53 @@ td span {
   letter-spacing: -1.5px;
 }
 
-form input, form textarea {
-  display: block;
-  width: 100%;
-  outline: none;
-  margin-bottom: 30px;
-  padding: 15px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.contact label {
+  color: black;
+  font-size: 30px;
 }
 
-form input:focus, form textarea:focus {
-  border-color: black;
+.form-group {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 10%;
 }
 
-.contact input {
-  width: 50%;
-  border: none;
+.contact .form-control {
+  width: 80%;
+  padding-bottom: 30px;
   background-color: white;
-  color: white;
-  outline: none;
+  color: black;
   font-size: 23px;
-  letter-spacing: -0.5px;
-  padding: 10px 0;
-  border-radius: 8px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-form button:hover {
-  background-color: #b4ffff;
-  width: 10%;
-}
-
-textarea {
-  width: 600px;
+.form-group textarea {
+  width: 80%;
   height: 100px;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 textarea:hover {
-  width: 800px;
+  width: 100%;
   font-size: 20px;
+}
+
+.boton {
+  margin-left: 10%;
+  padding-left: 20px;
+}
+
+.boton :hover {
+  margin-right: 20px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .footer {
@@ -579,5 +500,280 @@ textarea:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#login {
+  background-image: url(/img/bluewomen.jpeg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#login a {
+  text-decoration: none;
+}
+
+#login button:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 30%;
+}
+
+.col .text-center {
+  color: black;
+}
+
+.form-check-label {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.loginb {
+  background-color: transparent;
+  color: black;
+  font-size: 14px;
+  margin-top: 12px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
+  text-align: center;
+}
+
+.loginb:hover {
+  background-color: blue;
+  color: white;
+  width: 50%;
+  padding: 10px;
+}
+
+.register {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foto {
+  height: 100%;
+  width: 100%;
+  background-image: url(/img/bluewomen.jpeg);
+  background-size: cover;
+  background-position: center center;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main {
+  background-color: black;
+  height: 100vh;
+  width: 60vw;
+}
+
+.login-form {
+  margin-top: 90%;
+  margin-left: 30%;
+}
+
+.login-form div {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.login-form div button:hover {
+  margin-right: 20px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 30%;
+}
+
+.login-form button {
+  margin-right: 20px;
+}
+
+.login-form button a {
+  text-decoration: none;
+  color: white;
+}
+
+.form-group {
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #16f5f5;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 30vw;
+}
+
+.login-main-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+.login-main-text h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 60px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+.login-main-text p {
+  color: white;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .home {
+    width: 100vw;
+    background-position: center center;
+  }
+  .carousel {
+    display: none;
+  }
+  .home-Carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .addtion-l {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-cardl {
+    margin-top: 25px;
+  }
+  .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login-form {
+    margin-top: 10%;
+  }
+  .register-form {
+    margin-top: 10%;
+  }
+  .foto {
+    display: none;
+  }
+  .register {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .register .main {
+    width: 100vw;
+  }
+  .register .login-form {
+    margin-left: 20%;
+    margin-right: 10%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .register .form-group {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    min-height: 50vh;
+    background-position: center center;
+    width: 100vw;
+  }
+  .carousel {
+    display: none;
+  }
+  .home-Carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .addtion-l {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-cardl {
+    margin-top: 25px;
+  }
+  .login-form {
+    margin-top: 60%;
+  }
+  .register-form {
+    margin-top: 20%;
+  }
+  .login-main-text p {
+    display: none;
+  }
+  .register .login-form {
+    margin-top: 25vh;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .register .form-group {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .home {
+    background-position: center center;
+    width: 100vw;
+  }
+  #intro {
+    margin-top: -58.59px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .home {
+    background-position: center center;
+    width: 100vw;
+    height: 115vh;
+  }
+  .register .login-form {
+    margin-top: 50%;
+    margin-left: 40%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

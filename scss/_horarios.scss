@@ -1,15 +1,16 @@
-.table{
-    border-collapse:collapse;
-   
+.table {
+    border-collapse: collapse;
 }
-th ,td ,.table thead th, .table td,.table th{
+th,
+td,
+.table thead th,
+.table td,
+.table th {
     border: 1px solid white;
-   
-   
 }
-.schedule{
+.schedule {
     text-align: center;
-    background-color: #5D9EA6;
+    background-color: #5d9ea6;
     padding: 80px 20px;
 }
 
@@ -19,7 +20,7 @@ th ,td ,.table thead th, .table td,.table th{
     font-weight: bold;
 }
 
-    .schedule h3{
+.schedule h3 {
     color: white;
     font-size: 44px;
     letter-spacing: -2.5px;
@@ -27,22 +28,11 @@ th ,td ,.table thead th, .table td,.table th{
     font-weight: bold;
 }
 
-.table-bordered{
+.table-bordered {
     border: 1px solid white;
 }
 
-.table thead th{
-    color: white;
-    background-color: black;
-    width: 110px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 50px;
-    
-}
-
-td.b{
+.table thead th {
     color: white;
     background-color: black;
     width: 110px;
@@ -52,11 +42,20 @@ td.b{
     line-height: 50px;
 }
 
-td strong{
+td.b {
+    color: white;
+    background-color: black;
+    width: 110px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+td strong {
     color: white;
 }
 
 td span {
     color: white;
 }
-

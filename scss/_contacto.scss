@@ -1,51 +1,57 @@
-.contact{
+.contact {
     overflow: hidden;
     padding: 42px;
-    background-color: #5D9EA6;
+    background-color: #5d9ea6;
     align-items: center;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        letter-spacing: -1.5px;
+    }
+
+    label {
+        color: black;
+        font-size: 30px;
+    }
 }
-.contact h2{
-    font-size: 40px;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: -1.5px;
+
+.form-group {
+    align-content: center;
+    margin-left: 10%;
 }
-form input, form textarea{
-    display: block;
-    width: 100%;
-    outline: none;
-    margin-bottom: 30px;
-    padding: 15px;
-    transition: all 0.3s ease;
-}
-form input:focus,form textarea:focus{
-    
-    border-color:  black;
-  
-}
-.contact input{
-    width: 50%;
-    border: none;
+
+.contact .form-control {
+    width: 80%;
+    padding-bottom: 30px;
     background-color: white;
-    color: white;
-    outline: none;
+    color: black;
     font-size: 23px;
-    letter-spacing: -0.5px;
-    padding: 10px 0;
-    border-radius: 8px;
     transition: all 0.3s ease;
 }
-form button:hover{
-    background-color: #b4ffff;
-    width: 10%;
+
+.form-group textarea {
+    width: 80%;
+    height: 100px;
+    transition: all 0.4s;
 }
 
-textarea {
-    width: 600px; height: 100px;
-    transition: all 2s;       
- }
-
- textarea:hover {
-    width: 800px;
+textarea:hover {
+    width: 100%;
     font-size: 20px;
+}
+
+.boton {
+    margin-left: 10%;
+    padding-left: 20px;
+
+    :hover {
+        margin-right: 20px;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        transition: all 0.5s ease;
+        transform: scale(1.2);
+    }
 }
